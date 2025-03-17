@@ -78,7 +78,7 @@ img.shape
 
 #### 7. Crop the image to extract any specific (Eagle alone) object from the image.
 ```python
-cr = img_rgb[300:600,300:600] 
+cr = img_rgb[50:425,200:550] 
 plt.imshow(cr)
 plt.title("Cropped Region")
 plt.axis("off")
@@ -202,7 +202,7 @@ plt.show()
 ```
 #### 23. Merged the H, S, V, displays along with original image.
 ```python
-merged_hsv = cv2.cvtColor(cv2.merge([h, s, v]), cv2.COLOR_HSV2RGB)
+merged_hsv = cv2.cvtColor(cv2.merge([h, s, v]), cv2.COLOR_HSV2BGR)
 combined = np.concatenate((img_rgb, merged_hsv), axis=1)
 plt.figure(figsize=(10, 5))
 plt.imshow(combined)
@@ -224,11 +224,13 @@ plt.show()
 
 - 3.Cropped Eagle
   
-![Screenshot 2025-03-07 224922](https://github.com/user-attachments/assets/41f9d90a-e0a3-49e6-9a9c-16eb7862e3b6)
+![image](https://github.com/user-attachments/assets/c134aaee-0e3d-4abf-b973-258fdfab9732)
+
 
 - 4.Flipped Eagle
   
-![Screenshot 2025-03-07 224902](https://github.com/user-attachments/assets/5232ed4a-d585-42d5-b2c4-29eec427ded1)
+![image](https://github.com/user-attachments/assets/a8ad3a96-6f4d-435b-9acb-75f5bf9f7146)
+
 
 - 5.Apollo 11 Saturn V Launch Annotated Image
   
@@ -259,7 +261,8 @@ plt.show()
   
 - 4.Merged HSV Image
   
-![Screenshot 2025-03-07 224646](https://github.com/user-attachments/assets/82908671-b157-47fc-b4a5-8de3b33b3538)
+![image](https://github.com/user-attachments/assets/7332d1ec-b1a2-4c84-b2b1-27c9f070d799)
+
 
 ## Result:
 Thus, the images were read, displayed, brightness and contrast adjustments were made, and bitwise operations were performed successfully using the Python program.
